@@ -47,6 +47,26 @@ app.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
+     .state('app.todayRecommendation', {
+      url: "/todayRecommendation",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/todayRecommendation.html",
+         
+        }
+      }
+    })
+    
+    .state('app.ad', {
+      url: "/ad/:adId",
+      views: {
+        'menuContent' :{
+          templateUrl: "templates/ad.html",
+          
+        }
+      }
+    })
+  
     .state('app.playlists', {
       url: "/playlists",
       views: {
