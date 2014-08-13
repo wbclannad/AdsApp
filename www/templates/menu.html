@@ -8,22 +8,31 @@
   </ion-pane>
 
   <ion-side-menu side="left">
-    <header class="bar bar-header bar-stable">
-      <h1 class="title">Left</h1>
+    <header class="bar bar-header item-input-inset bar-positive">
+      <label class="item-input-wrapper">
+    <i class="icon ion-ios7-search placeholder-icon"></i>
+    <input type="search" placeholder= "{{'SEARCH' | translate}}">
+    </label>
     </header>
     <ion-content class="has-header">
       <ion-list>
-        <ion-item nav-clear menu-close ng-click="login()">
-          Login
+        <ion-item nav-clear menu-close ng-click="login()" class="item item-icon-left">
+            <i class="icon ion-ios7-person-outline"></i> <h2>Bin Wu</h2>
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/search">
-          Search
+        <ion-item nav-clear menu-close ng-click="login()" class="item item-icon-left">
+          <i class="icon ion-ios7-star-outline"></i> {{'TODAY_RECOMMENDATION' | translate}}
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/browse">
-          Browse
+        <ion-item nav-clear menu-close href="#/app/search" class="item item-icon-left">
+          <i class="icon ion-ios7-paperplane-outline"></i> {{'GOOD_LUCK' | translate}}
         </ion-item>
-        <ion-item nav-clear menu-close href="#/app/playlists">
-          Playlists
+        <ion-item nav-clear menu-close href="#/app/browse" class="item item-icon-left">
+          <i class="icon ion-ios7-heart-outline"></i>  {{'YOUR_PREFERENCE' | translate}}
+        </ion-item>
+        <ion-item nav-clear menu-close href="#/app/playlists" class="item item-icon-left">
+           <i class="icon ion-ios7-paper-outline"></i> {{'ADS_BY_CATEGORY' | translate}}
+        </ion-item>
+          <ion-item nav-clear menu-close href="#/app/playlists" class="item item-icon-left">
+           <i class="icon ion-ios7-gear-outline"></i> {{'SETUP' | translate}}
         </ion-item>
       </ion-list>
     </ion-content>
